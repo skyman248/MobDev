@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="230dp"
+        android:text="Go further..."
+        android:textAlignment="center"
+        android:textColor="@color/colorTxt"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="prevActivity"
+        android:text="@string/ButtonText2"
+        android:background="@color/colorPrimary"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_goneMarginLeft ="17dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="15dp"
+        />
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextActivity"
+        android:text="@string/ButtonText1"
+        android:background="@color/colorPrimary"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_goneMarginRight ="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="15dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sure?"
+        android:textSize="26sp"
+        android:layout_marginTop="220dp"
+        android:textColor="@color/colorTxt"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/colorBG">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_height="207dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="300dp"
+        android:text="@string/start_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorTxt"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="215dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="38dp"
+        android:textSize="16pt"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="488dp"
+        android:autoLink="none|map"
+        android:onClick="nextActivity"
+        android:text="@string/ButtonText1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginBottom="15dp"
+        app:layout_goneMarginRight="15dp" />
+
+
+</android.support.constraint.ConstraintLayout>
